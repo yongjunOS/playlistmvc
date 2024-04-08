@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title> 부서 관리 </title>
+<title> 부서 관리입니다 </title>
 </head>
 <body>
 	<script type="text/javascript">

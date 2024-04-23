@@ -1,0 +1,64 @@
+/*클릭 포커싱 시 파란색 테두리가 생기는 등의 웹 브라우저에서 발생하는 불편한 레이아웃을 수정한다.*/
+@CHARSET "UTF-8";
+
+a:link {
+	text-decoration: none !important;
+}
+
+a:hover {
+	text-decoration: none !important;
+}
+
+a:active {
+	text-decoration: none !important;
+}
+
+a:visited {
+	text-decoration: none !important;
+}
+
+input:invalid {
+	box-shadow: none
+}
+
+.form-control::-moz-placeholder {
+	color: #fff
+}
+
+.form-control:-ms-input-placeholder {
+	color: #fff
+}
+
+.form-control::-webkit-input-placeholder {
+	color: #fff
+}
+
+.form-control:focus {
+	border-color: #fff;
+	outline: 0;
+	box-shadow: none
+}
+
+button:focus {
+	box-shadow: none !important;
+	outline: none !important;
+}
+
+textarea:focus {
+	box-shadow: none !important;
+	outline: none !important;
+}
+
+input.form-control:focus, select.form-control:focus {
+	box-shadow: none;
+	outline: 0 auto -webkit-focus-ring-color;
+	background-color: #fff;
+	border-color: #ced4da;
+}
+
+.page-link:focus {
+	box-shadow: none !important;
+	outline: none !important;
+	background-color: #fff !important;
+	border-color: #ced4da !important;
+}

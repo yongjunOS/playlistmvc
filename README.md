@@ -1,38 +1,82 @@
 # 서블릿과 JSP를 활용한 재생목록 웹 애플리케이션 개발
 
-## 기술 스택
 
-언어: Java, JSP, HTML, CSS, JavaScript, SQL
-프레임워크/라이브러리: Servlet API, jQuery
-서버: Apache Tomcat
-데이터베이스: Oracle
-개발 도구: Spring Tool Suite (STS)
-버전 관리: Git
+## 기술 스택
+- Java
+- JSP (JavaServer Pages)
+- Servlets
+- JDBC (Java Database Connectivity)
+- HTML/CSS
+- JavaScript
+- Bootstrap 4.5.0
+- jQuery 3.5.1
+- Apache Tomcat
+- Oracle Database
 
 ## 프로젝트 구조
-
+```
+JAVABOZA/
 ├── src/
-│   └── main/
-│       ├── java/
-│       │   └── jun/
-│       │       └── playlist/
-│       │           ├── control/
-│       │           ├── controller/
-│       │           ├── dao/
-│       │           ├── dbcp/
-│       │           ├── dto/
-│       │           ├── filter/
-│       │           ├── frontcontrol/
-│       │           ├── hander/
-│       │           └── service/
-│       └── webapp/
-│           ├── WEB-INF/
-│           │   └── playlist/
-│           ├── css/
-│           ├── js/
-│           └── index.jsp
+│   └── jun/
+│       └── playlist/
+│           ├── control/
+│           │   └── PlayListController.java
+│           ├── controller/
+│           │   ├── PlayListDeleteController.java
+│           │   ├── PlayListInsertController.java
+│           │   ├── PlayListSelectController.java
+│           │   ├── PlayListSelectDetailController.java
+│           │   ├── PlayListUpdateController.java
+│           │   └── PlayListUpdateViewController.java
+│           ├── dao/
+│           │   └── PlayListDAO.java
+│           ├── dbcp/
+│           │   └── PlayListDBCP.java
+│           ├── dto/
+│           │   └── PlayListDTO.java
+│           ├── filter/
+│           │   └── CharacterEncodingFilter.java
+│           ├── frontcontrol/
+│           │   └── PlayListDispatcher.java
+│           ├── hander/
+│           │   └── PlayListHandlerAdapter.java
+│           └── service/
+│               └── PlayListService.java
+├── WebContent/
+│   ├── WEB-INF/
+│   │   └── playlist/
+│   │       ├── playlist_delete.jsp
+│   │       ├── playlist_delete_view.jsp
+│   │       ├── playlist_insert.jsp
+│   │       ├── playlist_insert_view.jsp
+│   │       ├── playlist_select_detail_view.jsp
+│   │       ├── playlist_select_view.jsp
+│   │       ├── playlist_update.jsp
+│   │       └── playlist_update_view.jsp
+│   ├── css/
+│   │   └── bootstrap.min_4.5.0.css
+│   ├── js/
+│   │   ├── bootstrap.min_4.5.0.js
+│   │   └── jquery-3.5.1.min.js
+│   └── index.jsp
 └── README.md
+```
 
+## 주요 기능
+1. **플레이리스트 관리**
+   - 플레이리스트 조회
+   - 플레이리스트 생성
+   - 플레이리스트 수정
+   - 플레이리스트 삭제
+   - 플레이리스트 상세 조회
+
+2. **데이터베이스 연결 풀 (DBCP) 사용**
+   - 효율적인 데이터베이스 연결 관리
+
+3. **MVC 아키텍처 적용**
+   - Model (DTO, DAO)
+   - View (JSP)
+   - Controller (Servlets)
 
 
 
@@ -54,4 +98,3 @@
    - PlayListHandlerAdapter: 컨트롤러의 실행 결과를 처리하는 어댑터
 6. 서비스 계층:
    - PlayListService (인터페이스): DAO와 컨트롤러 사이의 비즈니스 로직을 정의
-

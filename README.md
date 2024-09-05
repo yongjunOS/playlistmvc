@@ -98,3 +98,20 @@ JAVABOZA/
    - PlayListHandlerAdapter: 컨트롤러의 실행 결과를 처리하는 어댑터
 6. 서비스 계층:
    - PlayListService (인터페이스): DAO와 컨트롤러 사이의 비즈니스 로직을 정의
+  
+
+
+#### 재생목록 메인페이지
+<img width="929" alt="image" src="https://github.com/user-attachments/assets/c30c6904-1836-489a-b8a0-28abbe9f5952">
+
+#### 재생목록 생성페이지  
+<img width="786" alt="image" src="https://github.com/user-attachments/assets/08e4ef86-1810-4511-a910-7c29e3db4e81">
+
+#### 재생목록 상세페이지
+<img width="945" alt="image" src="https://github.com/user-attachments/assets/51ec3d90-66b1-4967-ba50-ca99d65d2fe8">
+
+#### 재생목록 수정페이지
+<img width="506" alt="image" src="https://github.com/user-attachments/assets/ba42d822-e4fb-4247-97dd-c8f0e3301c5a">
+
+#### 재생목록 삭제페이지
+<img width="804" alt="image" src="https://github.com/user-attachments/assets/cee48788-b05c-42e3-bfbd-72a2b32a87bf">

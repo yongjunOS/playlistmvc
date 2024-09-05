@@ -1,4 +1,39 @@
-# SpirngMVC패턴을 활용한 재생목록 CURD
+# 서블릿과 JSP를 활용한 재생목록 웹 애플리케이션 개발
+
+## 기술 스택
+
+언어: Java, JSP, HTML, CSS, JavaScript, SQL
+프레임워크/라이브러리: Servlet API, jQuery
+서버: Apache Tomcat
+데이터베이스: Oracle
+개발 도구: Spring Tool Suite (STS)
+버전 관리: Git
+
+## 프로젝트 구조
+
+├── src/
+│   └── main/
+│       ├── java/
+│       │   └── jun/
+│       │       └── playlist/
+│       │           ├── control/
+│       │           ├── controller/
+│       │           ├── dao/
+│       │           ├── dbcp/
+│       │           ├── dto/
+│       │           ├── filter/
+│       │           ├── frontcontrol/
+│       │           ├── hander/
+│       │           └── service/
+│       └── webapp/
+│           ├── WEB-INF/
+│           │   └── playlist/
+│           ├── css/
+│           ├── js/
+│           └── index.jsp
+└── README.md
+
+
 
 
 #### 주요 구성요소

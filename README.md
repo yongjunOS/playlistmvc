@@ -2,7 +2,7 @@
 
 
 ## 기술 스택
-- Java
+- Java 11
 - JSP (JavaServer Pages)
 - Servlets
 - JDBC (Java Database Connectivity)
@@ -10,7 +10,7 @@
 - JavaScript
 - Bootstrap 4.5.0
 - jQuery 3.5.1
-- Apache Tomcat
+- Apache Tomcat 10
 - Oracle Database
 
 ## 프로젝트 구조
